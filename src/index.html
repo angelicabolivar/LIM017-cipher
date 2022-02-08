@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Nunito:wght@500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container index">
+        <main>
+            <h1 class="main-title">Cifrado Cesar</h1>
+            <p class="main-parraf"> Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Las ventajas de usar un cifrado César incluyen: es uno
+                de los métodos más fáciles de usar en criptografía y puede proporcionar una seguridad mínima a la información, uno de los mejores métodos para usar si el sistema no puede usar ninguna técnica de codificación complicada y requiere pocos
+                recursos informáticos</p>
+            <button class="main-button">Empezar</button>
+        </main>
+
+        <aside>
+            <img class="aside-img" src="./img/img-landing4.jpg" alt="">
+        </aside>
+
+    </section>
+    <section class="contain cipher" style="display: none">
+        <h1 class="contain-title">Cifrado Cesar</h1>
+        <form action="" class="cipher-form">
+            <div class="cipher-form-inputs contain-inputs">
+                <label class="input-label" for="string">Ingresa el mensaje</label>
+
+                <textarea class="input-mesg" name="string" id="string" cols="30" rows="10"></textarea>
+                <label class="input-label" for="offset">Ingresa el desplazamiento</label>
+                <input class="input-offset" type="number" id="offset" name="offset">
+            </div>
+            <div class="cipher-form-buttons contain-buttons">
+                <button class="button" id="encode-button">Codificar</button>
+                <button class="button" id="decode-button">Decodificar</button>
+            </div>
+        </form>
+        <footer>
+            <p>Realizado por Angelica Bolivar en Laboratoria</p>
+        </footer>
+    </section>
+
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
