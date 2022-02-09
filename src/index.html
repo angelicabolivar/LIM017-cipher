@@ -11,33 +11,36 @@
 </head>
 
 <body>
-    <section class="container index">
-        <main>
-            <h1 class="main-title">Cifrado Cesar</h1>
-            <p class="main-parraf"> Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Las ventajas de usar un cifrado César incluyen: es uno
+    <section class="index" style="display: flex">
+        <main class="description">
+            <h1 class="description-title">Cifrado Cesar</h1>
+            <p class="description-parraf"> Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Las ventajas de usar un cifrado César incluyen: es uno
                 de los métodos más fáciles de usar en criptografía y puede proporcionar una seguridad mínima a la información, uno de los mejores métodos para usar si el sistema no puede usar ninguna técnica de codificación complicada y requiere pocos
                 recursos informáticos</p>
-            <button class="main-button">Empezar</button>
+            <button class="description-button" id="button-description">Empezar</button>
         </main>
 
-        <aside>
-            <img class="aside-img" src="./img/img-landing4.jpg" alt="">
+        <aside class="img">
+            <img class="rigth-img" src="./img/img-landing4.jpg" alt="">
         </aside>
 
     </section>
-    <section class="contain cipher" style="display: none">
-        <h1 class="contain-title">Cifrado Cesar</h1>
+    <section class="cipher" style="display: none">
+        <h1 class="cipher-title">Cifrado Cesar</h1>
         <form action="" class="cipher-form">
-            <div class="cipher-form-inputs contain-inputs">
+            <div class="cipher-form-inputs">
                 <label class="input-label" for="string">Ingresa el mensaje</label>
-
-                <textarea class="input-mesg" name="string" id="string" cols="30" rows="10"></textarea>
+                <textarea class="input-mesg" id="text-meng" name="string" id="string" cols="30" rows="10"></textarea>
                 <label class="input-label" for="offset">Ingresa el desplazamiento</label>
-                <input class="input-offset" type="number" id="offset" name="offset">
+                <input class="input-offset" id="offset" type="number" id="offset" name="offset">
             </div>
-            <div class="cipher-form-buttons contain-buttons">
+            <div class="cipher-form-buttons">
                 <button class="button" id="encode-button">Codificar</button>
                 <button class="button" id="decode-button">Decodificar</button>
+            </div>
+            <div class="cipher-result">
+                <h4 class="result-title">El resultado es:</h4>
+                <p id="result"></p>
             </div>
         </form>
         <footer>
