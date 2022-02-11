@@ -80,7 +80,7 @@ body {
 
 .cipher-form {
     width: 600px;
-    height: 450px;
+    min-height: 450px;
     border-radius: 10px;
     margin: 0 auto;
     background: rgba(245, 239, 239, 0.1);
@@ -115,8 +115,19 @@ body {
 .input-offset {
     width: 300px;
     height: 30px;
-    border: none;
+    border: none!important;
     border-radius: 6px;
+    padding: 10px;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
 }
 
 .cipher-form-buttons {
@@ -149,12 +160,15 @@ body {
 }
 
 .result-title {
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 #result {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 700;
+    overflow-wrap: break-word;
 }
 
 footer {

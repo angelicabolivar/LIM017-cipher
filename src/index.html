@@ -29,10 +29,11 @@
         <h1 class="cipher-title">Cifrado Cesar</h1>
         <form action="" class="cipher-form">
             <div class="cipher-form-inputs">
-                <label class="input-label" for="string">Ingresa el mensaje</label>
-                <textarea class="input-mesg" id="text-meng" name="string" id="string" cols="30" rows="10"></textarea>
+                <label class="input-label" for="text-meng">Ingresa el mensaje</label>
+                <textarea class="input-mesg" id="text-meng" name="text-meng" cols="30" rows="10"></textarea>
                 <label class="input-label" for="offset">Ingresa el desplazamiento</label>
-                <input class="input-offset" id="offset" type="number" id="offset" name="offset">
+                <input class="input-offset" id="offset" type="number" name="offset" min="1" required>
+                <span class="validity"></span>
             </div>
             <div class="cipher-form-buttons">
                 <button class="button" id="encode-button">Codificar</button>

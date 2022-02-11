@@ -15,7 +15,6 @@ const cipher = {
                 throw new TypeError("Ingresa un valor de la A-Z en mayusculas");
             }
 
-
         }
         return messg
     },
