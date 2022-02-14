@@ -12,7 +12,8 @@ const cipher = {
                 let letter = String.fromCharCode(offsetPos);
                 messg = messg + letter;
             } else {
-                throw new TypeError("Ingresa un valor de la A-Z en mayusculas");
+                //throw new TypeError("Ingresa un valor de la A-Z en mayusculas");//
+                messg += string[i];
             }
 
         }
@@ -31,7 +32,8 @@ const cipher = {
                 let letter = String.fromCharCode(offsetPos);
                 messg = messg + letter;
             } else {
-                throw new TypeError("Ingresa un valor de la A-Z en mayusculas");
+                //throw new TypeError("Ingresa un valor de la A-Z en mayusculas");//
+                messg += string[i];
             }
 
         }

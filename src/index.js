@@ -12,16 +12,21 @@ buttonDescription.addEventListener("click", () => {
     cipher.style.display = "block"
 });
 
+const uper = document.getElementById("text-meng")
+uper.addEventListener("keyup", () => {
+    const valueText = uper.value
+    uper.value = valueText.toUpperCase();
+});
+
 const encodeButton = document.getElementById("encode-button");
 encodeButton.addEventListener("click", e => {
     e.preventDefault();
     const input = document.getElementById("text-meng");
     const value = input.value
     const valueUper = value.toUpperCase()
-    const offset = document.getElementById("offset");
-    const valueOffSet = parseInt(offset.value);
+    const offSet = parseInt(document.getElementById("offset").value);
 
-    const valueEncode = cipher.encode(valueOffSet, valueUper);
+    const valueEncode = cipher.encode(offSet, valueUper);
     console.log(valueEncode);
 
     const finalResult = document.getElementById("result");
@@ -35,10 +40,9 @@ decodeButton.addEventListener("click", e => {
     const input = document.getElementById("text-meng");
     const value = input.value
     const valueUper = value.toUpperCase()
-    const offset = document.getElementById("offset");
-    const valueOffSet = parseInt(offset.value);
+    const offSet = parseInt(document.getElementById("offset").value);
 
-    const valueDecode = cipher.decode(valueOffSet, valueUper);
+    const valueDecode = cipher.decode(offSet, valueUper);
     console.log(valueDecode);
 
     const finalResult = document.getElementById("result");
