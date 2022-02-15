@@ -24,7 +24,6 @@ describe('cipher', () => {
             expect(() => cipher.encode(null, [])).toThrow(TypeError);
             expect(() => cipher.encode(0, 0)).toThrow(TypeError);
         });
-
         it('should return for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
             expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
         });

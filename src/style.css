@@ -7,7 +7,7 @@
 body {
     background: rgb(255, 0, 245);
     background: linear-gradient(45deg, rgba(255, 0, 245, 0.7) 45%, rgba(4, 9, 242, 0.8) 100%);
-    color: white;
+    color: #fff;
     font-family: 'Inter', sans-serif;
     width: 100%;
     height: auto;
@@ -22,38 +22,48 @@ body {
 
 .description {
     width: 50%;
-    padding: 80px 60px;
+    padding: 60px 60px;
+}
+
+.description-subtitle {
+    font-size: 36px;
+    font-family: 'Courgette', cursive;
 }
 
 .description-title {
     font-size: 50px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .description-parraf {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
-    margin: 30px 0;
+    margin: 20px 0;
     word-spacing: 6px;
     line-height: 24px;
 }
 
+.cta {
+    font-weight: 400;
+}
+
 .description-button {
     background-color: #FC9918;
-    border: none;
     padding: 10px 20px;
     margin-top: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: white;
+    color: #fff;
     border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    cursor: pointer;
 }
 
 .description-button:hover {
-    background-color: rgba(4, 9, 242, 0.8);
+    background-color: rgba(255, 0, 245, 0.7);
 }
 
 .img {
@@ -67,8 +77,8 @@ body {
 
 .cipher {
     width: 100%;
-    height: 100vh;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .cipher-title {
@@ -79,10 +89,11 @@ body {
 }
 
 .cipher-form {
-    width: 600px;
+    width: 500px;
     min-height: 450px;
     border-radius: 10px;
     margin: 0 auto;
+    padding: 30px 50px;
     background: rgba(245, 239, 239, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2px);
@@ -101,61 +112,66 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 .input-mesg {
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     border: none;
     border-radius: 6px;
     padding: 10px;
+    margin-bottom: 10px;
+}
+
+.input-mesg:focus {
+    outline: none;
+    border: 2px solid #FC9918;
+}
+
+.input-offset:focus {
+    outline: none;
+    border: 2px solid #FC9918;
+}
+
+.input-offset[type=number]::-webkit-inner-spin-button,
+.input-offset[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .input-offset {
-    width: 300px;
+    width: 80px;
     height: 30px;
-    border: none!important;
+    border: none;
     border-radius: 6px;
     padding: 10px;
 }
 
-input:invalid+span:after {
-    content: '✖';
-    padding-left: 5px;
-}
-
-input:valid+span:after {
-    content: '✓';
-    padding-left: 5px;
-}
-
 .cipher-form-buttons {
-    width: 50%;
+    display: flex;
+    justify-content: space-around;
     height: 40px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .button {
-    width: 140px;
+    width: 160px;
     background-color: #FC9918;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 8px 16px;
-    border: none;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: white;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: rgba(4, 9, 242, 0.8);
+    background-color: rgba(255, 0, 245, 0.7);
 }
 
 .cipher-result {
-    width: 300px;
-    margin: 0 auto;
     padding: 20px 0;
 }
 
@@ -166,16 +182,13 @@ input:valid+span:after {
 }
 
 #result {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     overflow-wrap: break-word;
 }
 
 footer {
     text-align: center;
     font-size: 10px;
-    left: 30%;
-    right: 30%;
-    position: absolute;
-    bottom: 10px;
+    margin-top: 20px;
 }
