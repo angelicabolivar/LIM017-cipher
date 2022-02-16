@@ -10,7 +10,7 @@ El cifrado ha revivido entre los usuarios de foros y redes sociales, que cifran 
 
 La idea es por tanto evitar que un lector que vea el mensaje pueda entenderlo de forma consciente. Para ello debe usar algún programa que codifique y descifre esos textos. Por tal motivo se ha creado esta herramienta online  Aprendamos cifrado cesar en donde  se puede agregar un mensaje con una clave y de manera facil y rapida se puede codificar. 
 
-####User Persona
+## User Persona
 
 - Carlos Martinez: 
 Es un joven de 27 años, apasionado por el mundo del cine. En su tiempo libre creo un el Blog Cultura De Pelicula en donde comparte con su comunidad avances, estrenos e información sobre lo ultimo en peliculas y series.
@@ -19,7 +19,9 @@ Para evitar desvelar la trama de una pelicula o su final utiliza el cifrado de e
 -  Eugenia Castro: 
 Es una chica, alegre y divertida que le encanta viajar por el mundo y compartir su manera de ver el mundo. Le encantan las redes sociales y su favorita es Twitter. La idea, evitar que un lector pueda leer parte de un hilo o mensaje a no ser que quiera hacerlo voluntariamente. Muchas veces no quiere compartir su ubicación geografica y la codifica para solo compartir la clave de cifrado con sus amigos y sentirse mas segura.
 
+## Diseño
 
+[![Diseño](https://raw.githubusercontent.com/angelicabolivar/LIM017-cipher/main/src/img/cifradoReadme.png "Diseño")](https://raw.githubusercontent.com/angelicabolivar/LIM017-cipher/main/src/img/cifradoReadme.png "Diseño")
 
 ## Índice
 
