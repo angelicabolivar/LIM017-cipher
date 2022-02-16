@@ -8,50 +8,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@200;400;500;700&family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
 
-    <body>
-        <section class="index" style="display: flex">
-            <main class="description">
-                <h2 class="description-subtitle">Aprendamos</h2>
-                <h1 class="description-title">Cifrado Cesar</h1>
-                <p class="description-parraf">El cifrado cesar consiste en sustituir cada letra del texto por un letra desplazada un número determinado de posiciones. Recibe su nombre en honor a Julio Cesar político y militar romano, que lo uso con un desplazamiento de 3 espacios
-                    para proteger sus mensajes importantes de contenido militar
-                </p>
-                <p class="description-parraf">El cifrado cesar se puede emplear en foros de internet para dar solución a un acertijo codificando y decoficando mensajes</p>
-                <p class="description-parraf cta">Con esta herramienta online puedes escribir tu mensaje, elegir la clave y crear un mensaje secreto o decifrarlo</p>
-                <button class="description-button" id="button-description">Empezar</button>
-            </main>
+<body>
+    <section class="index" style="display: flex">
+        <main class="description">
+            <h2 class="description-subtitle">Aprendamos</h2>
+            <h1 class="description-title">Cifrado Cesar</h1>
+            <p class="description-parraf">El cifrado cesar consiste en sustituir cada letra del texto por un letra desplazada un número determinado de posiciones. Recibe su nombre en honor a Julio Cesar político y milítar romano, que lo uso con un desplazamiento de 3 espacios para
+                proteger sus mensajes importantes de contenido militar
+            </p>
+            <p class="description-parraf">Un uso particular de este cifrado es entre usuarios de foros y redes sociales, que cifran spóilers para poder hablar de cualquier cosa evitando que la gente pueda descifrarlos fácilmente.</p>
+            <p class="description-parraf cta">Con esta herramienta online puedes escribir tu mensaje, elegir la clave y crear un mensaje secreto o decifrarlo</p>
+            <button class="description-button" id="button-description">Empezar</button>
+        </main>
 
-            <aside class="img">
-                <img class="rigth-img" src="./img/img-landing4.jpg" alt="">
-            </aside>
+        <aside class="img">
+            <img class="rigth-img" src="./img/img-landing4.jpg" alt="">
+        </aside>
 
-        </section>
-        <section class="cipher" style="display: none">
-            <h1 class="cipher-title">Cifrado Cesar</h1>
-            <form action="" class="cipher-form">
-                <div class="cipher-form-inputs">
-                    <label class="input-label" for="text-meng">Ingresa el mensaje</label>
-                    <textarea class="input-mesg" id="text-meng" name="text-meng" cols="30" rows="10"></textarea>
-                    <label class="input-label" for="offset">Ingresa el desplazamiento</label>
-                    <input class="input-offset" id="offset" type="number" name="offset" min="1" required>
+    </section>
+    <section class="cipher" style="display: none">
+        <button id="back-button" class="cipher-icon"><i class="fa-solid fa-circle-chevron-left fa-2xl "></i></button>
+        <h1 class="cipher-title">Cifrado Cesar</h1>
 
-                </div>
-                <div class="cipher-form-buttons">
-                    <button class="button" id="encode-button">Codificar</button>
-                    <button class="button" id="decode-button">Decodificar</button>
-                </div>
-                <div class="cipher-result">
-                    <h4 class="result-title">El resultado es:</h4>
-                    <p id="result"></p>
-                </div>
-            </form>
-            <footer>
-                <p>Realizado por Angelica Bolivar en Laboratoria</p>
-            </footer>
-        </section>
+        <form action="" class="cipher-form">
+            <div class="cipher-form-inputs">
+                <label class="input-label" for="text-meng">Ingresa el mensaje</label>
+                <textarea class="input-mesg" id="text-meng" name="text-meng" cols="30" rows="10"></textarea>
+                <label class="input-label" for="offset">Ingresa el desplazamiento</label>
+                <input class="input-offset" id="offset" type="number" name="offset" min="1" required>
 
-        <script src="index.js" type="module"></script>
-    </body>
+            </div>
+            <div class="cipher-form-buttons">
+                <button class="button" id="encode-button">Codificar</button>
+                <button class="button" id="decode-button">Decodificar</button>
+            </div>
+            <div class="cipher-clear-button">
+                <button class="button-clear" id="clear-button">Limpiar</button>
+            </div>
+            <div class="cipher-result">
+                <h4 class="result-title">El resultado es:</h4>
+                <p id="result"></p>
+            </div>
+        </form>
+        <footer>
+            <p>Realizado por Angelica Bolivar en Laboratoria</p>
+        </footer>
+    </section>
+
+    <script src="index.js" type="module"></script>
+</body>
 
 </html>
