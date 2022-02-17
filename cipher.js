@@ -1,25 +1,40 @@
 const cipher = {
-    encode: (offset, string) => {
+    encode: (offset = undefined, string = "") => {
+        if (typeof offset !== "number") throw new TypeError("El valor ingresado no es un numero");
+        if (!string) throw new TypeError('No ingresaste ningun mensaje');
+        if (typeof string !== "string") throw new TypeError("El valor ingresado no es texto");
 
         let messg = ""
         for (let i = 0; i < string.length; i++) {
-            let posAscii = string.charCodeAt(i);
-            let posOffset = (posAscii - 65 + offset) % 26 + 65;
-            let letra = String.fromCharCode(posOffset);
-            messg = messg + letra;
+            if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+                let asciiPos = string.charCodeAt(i);
+                let offsetPos = (asciiPos - 65 + offset) % 26 + 65;
+                let letter = String.fromCharCode(offsetPos);
+                messg = messg + letter;
+            } else {
+                messg += string[i];
+            }
 
         }
         return messg
     },
-    decode: (offset, string) => {
-        let messg = ""
-            // for (let i = 0; i < string.length; i++) {
-            //     let posAscii = string.charCodeAt(i);
-            //     let posOffset = (posAscii - 65 + offset) % 26 + 65;
-            //     let letra = String.fromCharCode(posOffset);
-            //     messg = messg + letra;
+    decode: (offset = undefined, string = "") => {
+        if (!string) throw new TypeError('No ingresaste ningun mensaje');
+        if (typeof string !== "string") throw new TypeError("El valor ingresado no es texto");
+        if (typeof offset !== "number") throw new TypeError("El valor ingresado no es un numero");
 
-        // }
+        let messg = ""
+        for (let i = 0; i < string.length; i++) {
+            if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+                let asciiPos = string.charCodeAt(i);
+                let offsetPos = (asciiPos + 65 - offset) % 26 + 65;
+                let letter = String.fromCharCode(offsetPos);
+                messg = messg + letter;
+            } else {
+                messg += string[i];
+            }
+
+        }
         return messg
     }
 };

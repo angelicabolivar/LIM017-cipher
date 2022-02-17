@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: rgb(255, 0, 245);
+    background: linear-gradient(45deg, rgba(255, 0, 245, 0.7) 45%, rgba(4, 9, 242, 0.8) 100%);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+.index {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    width: 50%;
+    padding: 60px 60px;
+}
+
+.description-subtitle {
+    font-size: 36px;
+    font-family: 'Courgette', cursive;
+}
+
+.description-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.description-parraf {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 20px 0;
+    word-spacing: 6px;
+    line-height: 24px;
+}
+
+.cta {
+    font-weight: 400;
+}
+
+.description-button {
+    background-color: #FC9918;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    cursor: pointer;
+}
+
+.description-button:hover {
+    background-color: rgba(255, 0, 245, 0.7);
+}
+
+.img {
+    width: 50%;
+}
+
+.rigth-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.cipher {
+    width: 100%;
+    padding: 30px 40px;
+}
+
+.cipher-icon {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    height: 32px;
+    width: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cipher-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cipher-form {
+    width: 500px;
+    min-height: 450px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background: rgba(245, 239, 239, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cipher-form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.input-mesg {
+    width: 100%;
+    height: 130px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.input-mesg:focus {
+    outline: none;
+    border: 2px solid #FC9918;
+}
+
+.input-offset:focus {
+    outline: none;
+    border: 2px solid #FC9918;
+}
+
+.input-offset[type=number]::-webkit-inner-spin-button,
+.input-offset[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-offset {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.cipher-form-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 160px;
+    background-color: #FC9918;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 8px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(255, 0, 245, 0.7);
+}
+
+.cipher-clear-button {
+    text-align: center;
+}
+
+.button-clear {
+    width: 100px;
+    background-color: #FC9918;
+    padding: 8px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cipher-result {
+    padding: 15px 0;
+}
+
+.result-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: 500;
+    min-height: 21px;
+    overflow-wrap: break-word;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 30px;
+}
