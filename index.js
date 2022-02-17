@@ -1,7 +1,7 @@
 import cipher from './cipher.js';
 
 const buttonDescription = document.getElementById("button-description");
-const uper = document.getElementById("text-meng");
+const textMeng = document.getElementById("text-meng");
 const encodeButton = document.getElementById("encode-button");
 const decodeButton = document.getElementById("decode-button");
 const clearButton = document.getElementById("clear-button");
@@ -15,9 +15,9 @@ buttonDescription.addEventListener("click", () => {
 });
 
 
-uper.addEventListener("keyup", () => {
-    const valueText = uper.value
-    uper.value = valueText.toUpperCase();
+textMeng.addEventListener("keyup", () => {
+    const valueText = textMeng.value
+    textMeng.value = valueText.toUpperCase();
 });
 
 
