@@ -9,8 +9,8 @@
         "pretest": "npm run eslint && npm run htmlhint",
         "test": "jest --verbose --coverage",
         "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-        "start": "serve -s ./src"
-
+        "start": "serve -s ./src",
+        "deploy": "gh-pages -d src"
     },
     "dependencies": {
         "@babel/core": "^7.6.2",
